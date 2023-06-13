@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheefa's Blog</title>
+    <!-- Box-icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="blog.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/blog logo.png" class="left">
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="https://medium.com/coinmonks/ethereum-merge-explained-in-detail-e353d2e95564">Medium</a>
+                <a href=""></a>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="web">
+                    <br>
+                    <br>
+                    Ethereum Merge explained in detail!
+                </h1>
+                <h4>By Sheefa Jalali</h4>
+                <br>
+                <img src="images/Eth.jpg" class="center">
+                <br>
+                <p class="text-small">
+                    Everyone is wondering Why did the Ethereum Merge happen? This is a quick explanation of what
+                    happened with Ethereum's recent “Merge” update. Here is what you need to know about the Ethereum
+                    Merge.
+
+                    After many delays, the Merge finally took place during the early hours of Sept 15, Ethereum made the
+                    transition from a power-hungry, proof-of-work system to an environmentally friendly proof-of-stake
+                    system. Ethereum Mainnet uses proof-of-stake, but this wasn't always the case. This switch is known
+                    as the “merge”. The Merge refers to the original Ethereum Mainnet merging with a separate
+                    proof-of-stake blockchain called the Beacon Chain, now existing as one chain. The Merge reduced
+                    Ethereum's energy consumption by 99.95%
+                </p>
+                <br>
+                <h2>What is Ethereum Merge?</h2>
+                <br>
+                <p>This Ethereum upgrade or “Merge” as it's being referred to, changed how new crypto transactions take
+                    place on the blockchain. Previously, the Ethereum blockchain, like the Bitcoin blockchain, ran on a
+                    proof-of-work model, which involves nodes — computers that are part of a large network — competing
+                    with one another to solve complicated math problems. The successful ones are then able to mine the
+                    next block of a transaction and create new coins.
+
+                    The upgrade transitioned Ethereum to the proof-of-stake model, which is a more energy-efficient and
+                    environmentally-friendly system. It entails nodes being selected via an algorithm that has a
+                    preference for nodes that hold more of a network's currency. In other words, their “stake” in the
+                    network is rewarded over the computer power that's rewarded in the proof-of-work system.
+
+                    The Merge was the joining of the original execution layer of Ethereum (the Mainnet that has existed
+                    since genesis) with its new proof-of-stake consensus layer, the Beacon Chain. It eliminated the need
+                    for energy-intensive mining and instead enabled the network to be secured using staked ETH. It was a
+                    truly exciting step in realizing the Ethereum vision — more scalability, security, and
+                    sustainability.</p>
+                <br>
+                <h2>How does Ethereum Merge work?</h2>
+                <br>
+                <p>Ethereum started with a Proof of Work consensus mechanism. After the merge, Ethereum will use the
+                    Proof of Stake consensus mechanism only.
+
+                    Proof of Stake asks people to put up their crypto assets as collateral for the chance to have their
+                    record of transactions made official, and earn the rewards for doing so. It's considered better for
+                    the environment since there's no energy-intensive computing to be done, and fairer because it's not
+                    just people who can afford vast computing arrays that can hope to earn rewards.
+
+                    The more you stake, the better your chances of being chosen as the next person to add their copy of
+                    the ledger to the blockchain. Anyone trying to cheat the system should, as with Proof of Work, be
+                    called out by the community for doing so, and they would also lose the assets they'd staked for the
+                    opportunity they'd bought themselves. While it is better for the environment, it does favor people
+                    and organizations who can afford to stake the most crypto — funneling more assets to the already
+                    asset-rich.</p>
+                <br>
+                <h2>How does the Merge affect the Users and Holders?</h2>
+                <br>
+                <p>The Merge did not change anything for holders/users.
+
+                    As a user or holder of ETH or any other digital asset on Ethereum, as well as non-node-operating
+                    stakers, you do not need to do anything with your funds or wallet to account for The Merge. ETH is
+                    just ETH. There is no such thing as “old ETH” or “new ETH” and wallets work the same after The Merge
+                    as they did before — people telling you otherwise are likely scammers.
+
+                    Despite swapping out proof-of-work, the entire history of Ethereum since genesis remained intact and
+                    unaltered by the transition to proof-of-stake. Any funds held in your wallet before The Merge will
+                    are still accessible after The Merge. No action is required to upgrade on your part.</p>
+                <br>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="background">
+        <p class="text-footer">
+
+        </p>
+
+
+    </footer>
+
+    <script>
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('white');
+            }
+            else {
+                $('nav').removeClass('white');
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheefa's Blog</title>
+    <!-- Box-icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="blog.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/blog logo.png" class="left">
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="https://medium.com/@jalalisheefa/automated-machine-learning-automl-101-7935eb325c35">Medium</a>
+                <a href=""></a>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="web">
+                    <br>
+                    <br>
+                    Automated Machine Learning (AutoML) 101
+
+                </h1>
+                <h4>By Sheefa Jalali</h4>
+                <br>
+                <img src="images/automated-machine-learning-platform-featured-image.png" class="center">
+                <br>
+
+                <br>
+                <h2>So what is Automated Machine learning?</h2>
+                <br>
+                <p>It is a branch of artificial intelligence (AI) and computer science which focus on the use of data
+                    and algorithms to imitate the way that humans learn, gradually improving its accuracy. Automated
+                    machine learning (AutoML) is the process of automating the tasks of applying machine learning to
+                    real-world problems. AutoML potentially includes every stage beginning with a raw dataset to
+                    building a machine learning model ready for deployment. AutoML was proposed as an artificial
+                    intelligence-based solution to the growing challenge of applying machine learning. The high degree
+                    of automation in AutoML aims to allow non-experts to make use of machine learning models and
+                    techniques without requiring them to become experts in machine learning.</p>
+                <br>
+                <h2>How does the AutoML process work?</h2>
+                <br>
+                <p>AutoML is typically a platform or open source library that simplifies each step in the machine
+                    learning process, from handling a raw dataset to deploying a practical machine learning model. In
+                    traditional machine learning, models are developed by hand, and each step in the process is handled
+                    separately.
+
+                    AutoML automatically locates and uses the optimal type of machine learning algorithm for a given
+                    task. It does this with two concepts:
+
+                    · Neural architecture search automates the design of neural networks. This helps AutoML models
+                    discover new architectures for problems that require them.
+
+                    · In Transfer learning pretrained models apply what they have learned to the new data sets. Transfer
+                    learning helps AutoML apply existing architectures to new problems that require it.
+
+                    Users with minimal machine learning and deep learning knowledge can interface with the models
+                    through a relatively simple coding language like Python.
+
+                    More specifically, here are some of the steps of the machine learning process that AutoML can
+                    automate, in the order, they occur in the process:<br>
+                    <br>
+                    · Raw data processing<br>
+                    <br>
+                    · Feature engineering and feature selection<br>
+                    <br>
+                    · Model selection<br>
+                    <br>
+                    · Hyper parameter optimization and parameter optimization<br>
+                    <br>
+                    · Deployment with consideration for business and technology constraints<br>
+                    <br>
+                    · Evaluation metric selection<br>
+                    <br>
+                    · Monitoring and problem checking<br>
+                    <br>
+                    · Analysis of results<br>
+                    <br>
+                </p>
+                <br>
+                <h2>The main benefits of AutoML are:</h2>
+                <br>
+                <p> Efficiency:<br>
+                    It speeds up and simplifies the machine learning process and reduces the training time
+                    of machine learning models.
+                    <br>
+                    <br>
+                    Cost savings: <br>
+                    A faster, more efficient machine learning process means a company can save money by
+                    devoting less of its budget to maintaining that process.
+                    <br>
+                    <br>
+                    Accessibility:<br>
+                     Having a simple process allows companies to save money on training staff or hiring
+                    experts. It also makes machine learning a viable possibility for a wider range of companies.
+                    <br>
+                    <br>
+                    Performance:<br>
+                     AutoML algorithms also tend to be more efficient than hand-coded models.
+                    <br>
+                    <br>
+                    Automating the process of applying machine learning end-to-end offers the advantages of producing
+                    simple solutions, faster creation of those solutions, and models that often outperform hand-designed
+                    models. Common techniques used in AutoML include hyper parameter optimization, meta-learning, and
+                    neural architecture search.
+                </p>
+                <br>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="background">
+        <p class="text-footer">
+
+        </p>
+
+
+    </footer>
+
+    <script>
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('white');
+            }
+            else {
+                $('nav').removeClass('white');
+            }
+        })
+    </script>
+</body>
+
+</html>

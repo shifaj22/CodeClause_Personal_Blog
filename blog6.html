@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheefa's Blog</title>
+    <!-- Box-icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="blog.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/blog logo.png" class="left">
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="https://medium.com/coinmonks/e-voting-system-based-on-blockchain-75570ef92c4">Medium</a>
+                <a href=""></a>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="web">
+                    <br>
+                    <br>
+                    E-Voting System Based on Blockchain
+                </h1>
+                <h4>By Sheefa Jalali</h4>
+                <br>
+                <img src="images/blog6.png" class="center">
+                <br>
+                <p class="text-small">
+                    Here is an explanation of how to implement an E-Voting System using Blockchain technology.
+
+                    This project was designed and developed by me for my final year.
+
+                    You can get the source code at https://github.com/shifaj22/E-Voting_System_Blockchain . Blockchain
+                    is a technology rapidly gaining momentum in the era of Industry 4.0. With high security
+                    and transparency provisions, it is being widely used in supply chain management systems, healthcare,
+                    payments, business, IoT, voting systems, etc.
+                </p>
+                <br>
+                <h2>Why do we need this?</h2>
+                <br>
+                <p>Current voting systems like ballot box voting or electronic voting suffer from various security
+                    threats such as DDoS attacks, polling booth capturing, vote alteration and manipulation, malware
+                    attacks, etc, and require vast amounts of paperwork, human resources, and time. This creates a sense
+                    of distrust among existing systems. Using blockchain, the voting process can be made more secure,
+                    transparent, immutable, and reliable.</p>
+                <br>
+                <h2>Programming Languages used:</h2>
+                <br>
+                <h3>For Smart Contract: Solidity</h3>
+                <p>
+                    Solidity is an object-oriented programming language created specifically by the Ethereum Network
+                    team for constructing and designing smart contracts on Blockchain platforms.
+
+                    Frontend: JavaScript, HTML, CSS</p>
+                <br>
+                <h2>Development Tools:</h2>
+                <br>
+                <h3>Truffle:</h3>
+                <p>Truffle is a world-class development environment, testing framework, and asset pipeline for
+                    blockchains using the Ethereum Virtual Machine (EVM), aiming to make life as a developer easier.
+                    Truffle is widely considered the most popular tool for blockchain application development.</p>
+                <br>
+                <h3>Ganache:</h3>
+
+                <p>Ganache is a software tool that developers widely use to create a local blockchain network for
+                    testing and development purposes. Developers may effectively test different scenarios and
+                    troubleshoot their blockchain apps by simulating a blockchain network on their local PC with
+                    Ganache.</p>
+                <br>
+                <h2>First, you need to download and install these:</h2>
+                <br>
+                <h3>Node.js / npm</h3>
+                <br>
+                <h3>Truffle</h3>
+                <p>npm i truffle</p>
+                <br>
+                <h3>Ganache</h3>
+                <br>
+                <p>Also, do not forget to add MetaMask Extension to your browser.</p>
+                <br>
+                <h3>Install these additional packages just in case to avoid errors:</h3>
+                <br>
+                <p>Web3.js: npm i web3 <br>
+                    <br>
+                    Solidity (solc-js): npm i solc
+                </p>
+                <br>
+                <h2>Steps to implement the project:</h2>
+                <br>
+                <h3>Step 1:</h3>
+                <p>Clone the GitHub repository “git clone https://github.com/shifaj22/E-Voting_System_Blockchain “</p>
+                <br>
+                <h3>Step 2:</h3>
+
+                <p>Connecting MetaMask and Ganache
+
+                    In MetaMask, go to settings > networks > add network. You can also get to this by clicking the
+                    MetaMask extension pinned on your browser > clicking the profile picture > settings > networks > add
+                    network. <br>
+                    <br>
+                    Name the network Ganache. <br>
+                    <br>
+                    For the New RPC URL go to ganache where you'll copy the RPC server URL and paste it into Metamask.
+                    The chain ID for the ganache is 1337. <br>
+                    <br>
+                    You can name the currency symbol “ETH” and save.
+                </p>
+                <br>
+                <h3>Step 3:</h3>
+                <p>Check the truffle-config.js file. The port number should be set to 7545 as we are not using the
+                    ganache-cli.</p>
+                <br>
+                <h3>Step 4:</h3>
+                <p>cd E-Voting_System_Blockchain <br>
+                    <br>
+                    npm i <br>
+                    <br>
+                    truffle migrate — reset <br>
+                    <br>
+                    (You should see the contract being deployed. To confirm whether the contract has been deployed or
+                    not, open Ganache and check if Ethereum is deducted from the first account, it should be 99.99 ETH)
+                    <br>
+                    <br>
+                    npm start
+                </p>
+                <br>
+                <h3>Step 5:</h3>
+                <p>Importing an account from Ganache to MetaMask. <br>
+                    <br>
+                    Open ganache and click on the key icon of the first account. The show keys button is the key icon.
+                    Copy the private key and click done. <br>
+                    <br>
+                    [NOTE: The first account in ganache is used for admin login. Make sure to import the private key of
+                    the first account into MetaMask to access the Admin Panel] <br>
+                    <br>
+                    Open the MetaMask menu which can be accessed by clicking the profile picture and selecting import
+                    account. <br>
+                    <br>
+                    Paste the private key copied from ganache and click import.
+                </p>
+
+
+                <br>
+                <p>After the project successfully runs on localhost:3000, register yourself as the admin, you can also
+                    access the Admin Panel and add candidates. After adding the candidates click on the “Start Election”
+                    button.</p>
+                <br>
+                <p>If you want to add different users/voters then, import the private keys of different accounts from
+                    Ganache to MetaMask and connect those accounts to the current site and register as a different
+                    user/voter to cast a vote.</p>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="background">
+        <p class="text-footer">
+
+        </p>
+
+
+    </footer>
+
+    <script>
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('white');
+            }
+            else {
+                $('nav').removeClass('white');
+            }
+        })
+    </script>
+</body>
+
+</html>
